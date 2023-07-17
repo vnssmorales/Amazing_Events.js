@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&family=Nunito+Sans:ital,wght@0,200;0,300;0,400;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+.list-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 2%;
+}
+
+.list-nav span{
+    margin-right: auto;
+    font-size: 40px;
+}
+.list-nav a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid;
+    padding: 5px;
+}
+.title{
+    width: 100%;
+    text-align: center;
+    padding: 2% 0;
+    background-color: rgb(249, 182, 229);
+}
+
+.checkbox-container{
+    width: 90%;
+    padding: 2%;
+    margin: auto;
+}
+.searcher{
+    margin-left: auto;
+    width: 40%;
+    margin-bottom: -2%;
+}
+#main .card button, #sectionUpcoming .card button, #sectionPastEvent .card button{
+    background-color: rgb(239, 134, 250);
+    border-radius: 8px;
+    padding: 3% 0;
+    border:none;
+    color: #fff;
+}
+#main .card button:hover, #sectionUpcoming .card button:hover, #sectionPastEvent .card button:hover{
+    background-color: rgb(141, 41, 141);
+    cursor: pointer;
+}
+
+footer{
+    width: 100%;
+    background-color: rgb(213, 205, 205);
+    height: 100px;
+    margin-top: 200px;
+}
+
+
+/* ESTILOS CARDS*/
+#main, #sectionUpcoming, #sectionPastEvent{
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card{
+    width: 100%;
+    max-width: 300px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+
+.card h3{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+.card p{
+    font-size: 16px;
+    margin-bottom: 8px;
+    height: 110px;
+}
+.card h4{
+    padding: 2% 0 3% 0;
+    color: rgb(153, 53, 246);
+}
+.card-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    background-color: rgb(212 194 206);
+    color: rgb(77 72 77);
+    padding: 2% 5%;
+}
+
+/*cards conatiner*/
+#event-details-container{
+    padding: 3% 0;
+    width: 80%;
+    margin: auto;
+}
+.card-details{
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+}
+.card-details img{
+    width: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+    padding: 2%;
+}
+.card-details h5{
+    font-weight: 600;
+    color: rgb(141, 41, 141);
+    margin-bottom: 12px;
+}
+.card-details em{
+    font-size: 18px;
+}
+.card-details .card-body{
+    padding: 2%;
+}   
+
+/*SECTION CONTACT*/
+
+#sectionContact{
+    width: 60%;
+    margin: auto;
+    padding: 3%;
+}
+#sectionContact form input, #sectionContact form textarea{
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: 1px solid rgb(141, 41, 141);
+    border-radius: 8px;
+}
+#sectionContact button{
+    width: 100px;
+    padding: 5px 10px;
+    margin-bottom: 2%;
+    border: 1px solid rgb(141, 41, 141);
+    border-radius: 8px;
+    background-color: rgb(141, 41, 141);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/*SECTION STATS*/
+#sectionStats{
+    width: 80%;
+    margin: auto;
+    padding: 3%;
+}
+#sectionStats th, #sectionStats td{
+    border: 1px solid rgb(141, 41, 141);
+}
+#sectionStats table .title{
+    background-color: rgb(222, 154, 222);
+    color: #fff;
+    font-weight: 600;
+    padding: 2%;
+    font-size: 24px;
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .card{
+        max-width: 100%;
+    }
+}
